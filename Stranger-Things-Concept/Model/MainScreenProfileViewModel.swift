@@ -18,4 +18,19 @@ class MainScreenProfileViewModel: ObservableObject {
         self.startAnimation = profileModel.startAnimation
         self.profiles = profileModel.profiles
     }
+    
+    func playImages() {
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { timer in
+            withAnimation(Animation.easeOut(duration: 3).delay(0.25)) {
+                print("Toggling startAnimation stateObject...")
+                self.startAnimation.toggle()
+            }
+            if !self.startAnimation {
+                Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
+                    print("Selecting next image")
+                    self.currentIndex = (self.currentIndex + 1) % self.profiles.count
+                }
+            }
+        }
+    }
 }

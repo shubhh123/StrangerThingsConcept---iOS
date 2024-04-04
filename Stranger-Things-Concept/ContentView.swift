@@ -2,23 +2,31 @@
 //  ContentView.swift
 //  Stranger-Things-Concept
 //
-//  Created by Shubham on 01/04/24.
+//  Created by Shubham on 02/04/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var mainScreenProfileViewModel = MainScreenProfileViewModel(profileModel: ProfileModel())
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView {
+            ZStack {
+                MainScreenProfile(viewModel: mainScreenProfileViewModel)
+                Spacer()
+            }
+            VStack(spacing: 20) {
+                ForEach(0 ..< 20) { _ in
+                    CastView()
+                }
+            }
         }
-        .padding()
+        .background(Color.black) // Set background color to ensure the gradient mask works
+        AudioPlayer()
     }
 }
-
 #Preview {
     ContentView()
 }

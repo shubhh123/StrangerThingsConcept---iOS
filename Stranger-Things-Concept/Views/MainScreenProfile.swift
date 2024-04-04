@@ -1,3 +1,4 @@
+
 //
 //  MainScreenProfile.swift
 //  Stranger-Things-Concept
@@ -8,11 +9,30 @@
 import SwiftUI
 
 struct MainScreenProfile: View {
+    
+    @ObservedObject var viewModel: MainScreenProfileViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Image(viewModel.profiles[viewModel.currentIndex].rawValue)
+                .resizable()
+                .scaledToFill()
+                .frame(height: 700) // Adjust the height as needed
+                .mask(LinearGradient(gradient: Gradient(stops: [
+                    .init(color: .black, location: 0),
+                    .init(color: .clear, location: 1), // Adjust the location as needed
+                    //.init(color: .black, location: 1),
+                    //.init(color: .clear, location: 1)
+                ]), startPoint: .top, endPoint: .bottom))
+                .opacity(viewModel.startAnimation ? 1.0 : 0)
+                .onAppear {
+                    viewModel.playImages()
+                }
+            }
+        }
     }
-}
 
 #Preview {
-    MainScreenProfile()
+    MainScreenProfile(viewModel: MainScreenProfileViewModel(profileModel: ProfileModel()))
 }

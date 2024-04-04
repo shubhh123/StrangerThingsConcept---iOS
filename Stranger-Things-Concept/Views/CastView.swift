@@ -9,7 +9,23 @@ import SwiftUI
 
 struct CastView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack() {
+            Image("millie-bobby-brown")
+                .resizable()
+                .scaledToFit()
+                .clipShape(Circle())
+                .frame(width: 200, height: 190)
+            
+            VStack(alignment: .leading) {
+                Text("El")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("I am El")
+                    .foregroundStyle(Color.secondary)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(1)
+            }
+        } //HSTACK
     }
 }
 

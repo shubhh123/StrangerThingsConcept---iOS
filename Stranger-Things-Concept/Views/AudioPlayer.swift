@@ -6,10 +6,24 @@
 //
 
 import SwiftUI
+import AVFAudio
+
 
 struct AudioPlayer: View {
+    
+    //var soundManager = SoundManager()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                
+            } label: {
+                Text("")
+            }
+        }
+        .onAppear {
+            SoundManager.instance.playSound()
+        }
     }
 }
 

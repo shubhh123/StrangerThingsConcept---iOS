@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510392DD2BBC3A7B003E7603 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510392DC2BBC3A7B003E7603 /* AudioPlayer.swift */; };
+		510392E22BBC3E49003E7603 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510392E12BBC3E49003E7603 /* SoundManager.swift */; };
+		510392E52BBC40F8003E7603 /* monster-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 510392E42BBC40F8003E7603 /* monster-sound-effect.mp3 */; };
+		510392E72BBC43A9003E7603 /* stranger-things-theme-song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 510392E62BBC43A9003E7603 /* stranger-things-theme-song.mp3 */; };
+		510392E92BBC4636003E7603 /* MainScreenProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510392E82BBC4636003E7603 /* MainScreenProfile.swift */; };
+		512623D42BBB018A0004B0CB /* Trademark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512623D32BBB018A0004B0CB /* Trademark.swift */; };
+		516B1D5E2BBE86BA0038A329 /* MainScreenProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B1D5D2BBE86BA0038A329 /* MainScreenProfileViewModel.swift */; };
+		516B1D602BBE8AE50038A329 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B1D5F2BBE8AE50038A329 /* Model.swift */; };
 		51A586B42BBAF095002450CD /* Stranger_Things_ConceptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A586B32BBAF095002450CD /* Stranger_Things_ConceptApp.swift */; };
 		51A586B62BBAF095002450CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A586B52BBAF095002450CD /* ContentView.swift */; };
 		51A586B82BBAF096002450CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A586B72BBAF096002450CD /* Assets.xcassets */; };
 		51A586BB2BBAF096002450CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A586BA2BBAF096002450CD /* Preview Assets.xcassets */; };
+		51A586C32BBAF85B002450CD /* CastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A586C22BBAF85B002450CD /* CastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		510392DC2BBC3A7B003E7603 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		510392E12BBC3E49003E7603 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		510392E42BBC40F8003E7603 /* monster-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "monster-sound-effect.mp3"; sourceTree = "<group>"; };
+		510392E62BBC43A9003E7603 /* stranger-things-theme-song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "stranger-things-theme-song.mp3"; sourceTree = "<group>"; };
+		510392E82BBC4636003E7603 /* MainScreenProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProfile.swift; sourceTree = "<group>"; };
+		512623D32BBB018A0004B0CB /* Trademark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trademark.swift; sourceTree = "<group>"; };
+		516B1D5D2BBE86BA0038A329 /* MainScreenProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProfileViewModel.swift; sourceTree = "<group>"; };
+		516B1D5F2BBE8AE50038A329 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		51A586B02BBAF095002450CD /* Stranger-Things-Concept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stranger-Things-Concept.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A586B32BBAF095002450CD /* Stranger_Things_ConceptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stranger_Things_ConceptApp.swift; sourceTree = "<group>"; };
 		51A586B52BBAF095002450CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51A586B72BBAF096002450CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51A586BA2BBAF096002450CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51A586C22BBAF85B002450CD /* CastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +50,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510392DE2BBC3CBC003E7603 /* SwiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftFiles;
+			sourceTree = "<group>";
+		};
+		510392E32BBC40E1003E7603 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				510392E62BBC43A9003E7603 /* stranger-things-theme-song.mp3 */,
+				510392E42BBC40F8003E7603 /* monster-sound-effect.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		516B1D5C2BBE86AE0038A329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				516B1D5D2BBE86BA0038A329 /* MainScreenProfileViewModel.swift */,
+				516B1D5F2BBE8AE50038A329 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		51A586A72BBAF094002450CD = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +94,15 @@
 		51A586B22BBAF095002450CD /* Stranger-Things-Concept */ = {
 			isa = PBXGroup;
 			children = (
+				516B1D5C2BBE86AE0038A329 /* Model */,
+				510392E32BBC40E1003E7603 /* Sounds */,
+				510392DE2BBC3CBC003E7603 /* SwiftFiles */,
+				51A586C12BBAF844002450CD /* Views */,
 				51A586B32BBAF095002450CD /* Stranger_Things_ConceptApp.swift */,
 				51A586B52BBAF095002450CD /* ContentView.swift */,
 				51A586B72BBAF096002450CD /* Assets.xcassets */,
 				51A586B92BBAF096002450CD /* Preview Content */,
+				510392E12BBC3E49003E7603 /* SoundManager.swift */,
 			);
 			path = "Stranger-Things-Concept";
 			sourceTree = "<group>";
@@ -65,6 +113,17 @@
 				51A586BA2BBAF096002450CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51A586C12BBAF844002450CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51A586C22BBAF85B002450CD /* CastView.swift */,
+				512623D32BBB018A0004B0CB /* Trademark.swift */,
+				510392DC2BBC3A7B003E7603 /* AudioPlayer.swift */,
+				510392E82BBC4636003E7603 /* MainScreenProfile.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +184,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510392E72BBC43A9003E7603 /* stranger-things-theme-song.mp3 in Resources */,
 				51A586BB2BBAF096002450CD /* Preview Assets.xcassets in Resources */,
 				51A586B82BBAF096002450CD /* Assets.xcassets in Resources */,
+				510392E52BBC40F8003E7603 /* monster-sound-effect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516B1D602BBE8AE50038A329 /* Model.swift in Sources */,
+				51A586C32BBAF85B002450CD /* CastView.swift in Sources */,
+				510392E92BBC4636003E7603 /* MainScreenProfile.swift in Sources */,
+				512623D42BBB018A0004B0CB /* Trademark.swift in Sources */,
+				510392DD2BBC3A7B003E7603 /* AudioPlayer.swift in Sources */,
 				51A586B62BBAF095002450CD /* ContentView.swift in Sources */,
 				51A586B42BBAF095002450CD /* Stranger_Things_ConceptApp.swift in Sources */,
+				516B1D5E2BBE86BA0038A329 /* MainScreenProfileViewModel.swift in Sources */,
+				510392E22BBC3E49003E7603 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
